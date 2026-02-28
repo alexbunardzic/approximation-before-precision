@@ -86,7 +86,7 @@ describe("Session Domain mutation hardening", () => {
     expect(countInactiveSessions()).toBe(1);
   });
 
-  test("getSessions is enumerable and switches to reject contract", () => {
+  test("getSessions is enumerable and switches to reject contract.", () => {
     const domain = freshSessionModule();
     expect(Object.keys(domain)).toContain("getSessions");
 
